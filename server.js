@@ -1,10 +1,16 @@
-const mongoose = require('mongoose');
+const express = require("express")
+const apiRoutes = require("./routes/apiRoutes")
 
+const app = express(); 
 
-mongoose.connect('mongodb://localhost/social-network-db', {
+const PORT = 3000; 
 
-});
+app.use(express.json())
 
+app.use("/", apiRoutes)
 
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`)
+})
 
 

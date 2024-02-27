@@ -1,43 +1,43 @@
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-const thoughtSchema = new mongoose.Schema({
-    thoughtText: {
-        type: 
-        required: 
-        trim:
-    }, 
-    createdAt:{
-        date: 
-        date.now: 
-    }, 
-    username: {
-        type: string
-        required: 
-    }, 
-    reactions: {
-        type: 
-        enum: 
-    }
-})
-
-
+// const thoughtSchema = new mongoose.Schema({
+//     thoughtText: {
+//         type: String, 
+//         required: true, 
+//         trim: true 
+//     }, 
+//     createdAt:{
+//         type: date, 
+//         default: Date.now
+//     }, 
+//     username: {
+//         type: string,
+//         required: true
+//     }, 
+//     reactions: {
+//         type: String, 
+//         enum: 
+//     }
+// })
 
 
-const reactionSchema = new mongoose.Schema({
-    reactionId: {
+
+
+// const reactionSchema = new mongoose.Schema({
+//     reactionId: {
         
-    }, 
-    reactionBody:{
-        type: 
-        required: 
-        trim:
-    }, 
-    username: {
-        type: string
-        required: 
-    }, 
-    createdAt: {
-        date: 
-        date.now: 
-    }
-})
+//     }, 
+//     reactionBody:{
+//         type: String,
+//         required: true,
+//         trim:true
+//     }, 
+//     username: {
+//         type: String,
+//         required: true,
+//     }, 
+//     createdAt: {
+//         type: date, 
+//         default: Date.now
+//     }
+// })
